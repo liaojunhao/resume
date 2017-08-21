@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院首页</title>
+    <meta name="keywords" content="极客学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,ios,flash,java,python,html5,swift,cocos2dx">
+    <meta name="description" content="极客学院作为中国最大IT职业在线教育平台,拥有海量高清IT职业课程,涵盖30+个技术领域,如Android,iOS ,Flash,Java,Python,HTML5,Swift,Cocos2dx等视频教程.根据IT在线学习特点,极客学院推出IT学习知识体系图,IT职业学习实战路径图,帮助IT学习者从零基础起步,结合IT实战案例演练,系统学习,助你快速成为IT优秀技术人才！">
+</head>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="styles_wildcard.css">
+
+<body>
+    <div class="wrapper">
+        <!--header-->
+        <div id="header" class="w-1000">
+            <div class="wrap">
+                <a href="http://www.jikexueyuan.com/">
+                    <h1><img src="http://s1.jikexueyuan.com/common/images/logo_c8caff4.png" class="logo" alt="极客学院" \></h1>
+                </a>
+                <div class="header-ad" id="header-ad01"></div>
+                <div class="search-section">
+                    <div class="headsearch" id="headsearch" action="###">
+                        <input class="search-text" type="search" name="q" autocomplete="off" id="web_search_header" placeholder="搜索课程、问答或Wiki" value="" style="padding-right: 55px;outline:none;">
+                        <input type="submit" class="search-btn" value="">
+                        <div class="hot-words" style="display: block;">
+                            <a href="#">Android</a>
+                            <a href="#">iOS</a>
+                            <a href="#">HTML5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="loginbox">
+                    <span class="my-massage2">&nbsp;</span>
+                    <em style="padding: 0px 10px;">|</em>
+                    <a href="" style="text-decoration:none;color:#333;" rel="nofollow"><span>QQ登录</span></a>
+                    <em style="padding: 0px 10px">|</em>
+                    <span><a href="" rel="nofollow">登录</a></span>
+                    <em style="padding: 0px 10px">|</em>
+                    <span style="position: relative;"><a href="" rel="nofollow">注册</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="loading">
+            <div class="loading-length" style="width: 1423px;"></div>
+        </div>
+        <div class="navpositon">
+            <div id="navbox">
+                <div class="nav w-1000">
+                    <div class="navbox">
+                        <a href="http://www.jikexueyuan.com/" jktag="0002|1|00100">首页</a><a href="http://www.jikexueyuan.com/course/" class="" jktag="0002|2|00200" node-type="nav-link">职业课程</a><a href="http://j.jikexueyuan.com?huodong=jiuye_all_guide" class="" jktag="0002|3|00300" node-type="nav-link">就业学习</a><a href="javascript:;" class="" node-type="nav-link">极客社区</a><a href="javascript:;" style="position: relative;" node-type="nav-link">极客＋</a>
+                        <ul class="navpanel cf">
+                            <li class="panel-item" node-type="nav-panel-item">
+                                <span class="angle"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="http://www.jikexueyuan.com/course/" class="" jktag="0002|2|00201">课程库</a></li>
+                                    <li><a target="_blank" href="http://www.jikexueyuan.com/path/" class="" jktag="0002|2|00202">知识体系图</a></li>
+                                    <li><a target="_blank" href="http://ke.jikexueyuan.com/zhiye/" jktag="0002|2|00203">职业路径图</a></li>
+                                    <li><a target="_blank" href="http://ke.jikexueyuan.com/xilie/" jktag="0002|2|00204">系列课程</a></li>
+                                </ul>
+                            </li>
+                            <li class="panel-item" node-type="nav-panel-item">
+                                <span class="angle"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_guide" jktag="0002|3|00301">Web前端开发</a></li>
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_guide" jktag="0002|3|00302">Android开发</a></li>
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/train/PHP?huodong=jiuye_PHP_guide" jktag="0002|3|00305">PHP 开发</a></li>
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/train/ios?huodong=jiuye_ios_guide" jktag="0002|3|00304">iOS开发</a></li>
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_guide" jktag="0002|3|00303">JavaWeb开发</a></li>
+                                </ul>
+                            </li>
+                            <li class="panel-item" node-type="nav-panel-item">
+                                <span class="angle"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="http://wiki.jikexueyuan.com" jktag="0002|4|00401">Wiki</a></li>
+                                    <li><a target="_blank" href="http://wenda.jikexueyuan.com/" jktag="0002|4|00402">技术问答</a></li>
+                                    <li><a target="_blank" href="http://qun.jikexueyuan.com" jktag="0002|4|00403">社群</a></li>
+                                    <li><a target="_blank" href="http://download.jikexueyuan.com" jktag="0002|4|00404">资源分享</a></li>
+                                </ul>
+                            </li>
+                            <li class="panel-item" node-type="nav-panel-item">
+                                <span class="angle"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="http://mooc.jikexueyuan.com" jktag="0002|4|00501">高校合作</a></li>
+                                    <li><a target="_blank" href="http://zhiye.jikexueyuan.com" jktag="0002|4|00502">极客人才联盟</a></li>
+                                    <li><a target="_blank" href="http://press.jikexueyuan.com/evangelist/apply.html" jktag="0002|4|00503">布道师招募</a></li>
+                                    <li><a target="_blank" href="http://j.jikexueyuan.com/assistant/apply" jktag="0002|4|00504">实战教练招募</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-need">
+                        <a href="http://www.jikexueyuan.com/vip/">
+                            <span><img src="http://s1.jikexueyuan.com/common/images/vip-icon_76ae754.png">VIP会员</span>
+                        </a>
+                        <a href="http://wqx.jikexueyuan.com/jq/8551353.aspx" target="_blank">
+                            <span><img src="http://s1.jikexueyuan.com/common/images/txwj-icon_5ff1259.png">填问卷领福利</span>
+                        </a>
+                        <a href="http://www.jikexueyuan.com/app/" target="_blank"><span style="position: relative;"><img src="http://s1.jikexueyuan.com/common/images/dl-icon_4bc18a7.png"><img src="http://s1.jikexueyuan.com/common/images/newicon_56b11ef.png" style="width: 14px;height: 15px;position: absolute;z-index: 2000;right: -19px;top: -14px;display: block;">APP下载</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--header end-->
+        <!--main-->
+        <div class="pager">
+            <div class="w-1000 mar-t20 cf">
+                <div class="lesson-classfiy-nav">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="#" title="#">移动开发</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">应用开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">移动开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">游戏开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">前端开发</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">前端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">前端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">前端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">后端开发</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">后端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">后端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">后端开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#" title="#">基础知识</a>
+                                <div class="lesson-list-show">
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="">基础开发</a></dt>
+                                        <dd>
+                                            <a href="#">Android</a>
+                                            <a href="#">iOS</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--banner-->
+                <div class="lesson-center-focus">
+                    <div class="index-banner">
+                        <div class="banner-box swiper-container" id="banner_box_top">
+                            <span class="btn btn_l" style="display: none;" id="banner-left"></span>
+                            <span class="btn btn_r" style="display: none;" id="banner-right"></span>
+                            <ul class="img cf">
+                                <li>
+                                    <a href="" title="banner"><img src="images/banner1.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="" title="banner"><img src="images/banner2.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="" title="banner"><img src="images/banner3.jpg"></a>
+                                </li>
+                                <li>
+                                    <a href="" title="banner"><img src="images/banner4.jpg"></a>
+                                </li>
+                            </ul>
+                            <ul class="num cf"></ul>
+                        </div>
+                    </div>
+                    <div class="focuswork-wrap swiper-container" id="banner_box_bottom">
+                        <span class="btn_bottom btn_bottom_left" style="display: none;" id="banner-btn-left"></span>
+                        <span class="btn_bottom btn_bottom_right" style="display: none;" id="banner-btn-right"></span>
+                        <ul class="lesson-list swiper-wrapper">
+                            <!--一-->
+                            <li class="swiper-slide">
+                                <a href="" class="lession-item">
+                                    <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" alt="" class="lession-icon">
+                                    <p class="lession-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <!--二-->
+                            <li class="swiper-slide">
+                                <a href="" class="lession-item">
+                                    <img src="http://a1.jikexueyuan.com/home/201604/21/bdab/5718847c84d06.png" alt="" class="lession-icon">
+                                    <p class="lession-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <!--三-->
+                            <li class="swiper-slide">
+                                <a href="" class="lession-item">
+                                    <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" alt="" class="lession-icon">
+                                    <p class="lession-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <!--四-->
+                            <li class="swiper-slide">
+                                <a href="" class="lession-item">
+                                    <img src="http://a1.jikexueyuan.com/home/201601/18/9e49/569ce5c7bedf1.png" alt="" class="lession-icon">
+                                    <p class="lession-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                            <!--五-->
+                            <li class="swiper-slide">
+                                <a href="" class="lession-item">
+                                    <img src="http://a1.jikexueyuan.com/home/201512/04/b1e4/56615f22aa6eb.jpg" alt="" class="lession-icon">
+                                    <p class="lession-title">HTML5/Web前端工程师</p>
+                                    <p class="intro">前腾讯高级前端工程师授课</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--banner end-->
+                <!--lesson-right-->
+                <div class="lesson-right-show">
+                    <!--news-->
+                    <div class="news">
+                        <h3>快讯</h3>
+                        <ul class="list">
+                            <li class="item">
+                                <a href="" target="_blank" style="color:red">晒学习周报 免费领Android新书</a>
+                            </li>
+                            <li class="item">
+                                <a href="" target="_blank" jktag="0003|3|03100">Python实战系列课程</a>
+                            </li>
+                            <li class="item">
+                                <a href="" target="_blank" style="color:red">[限时免费]每周限免系列课程</a>
+                            </li>
+                            <li class="item">
+                                <a href="" target="_blank">PHP职业路径图大量更新！</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--news end-->
+                    <!--userinfo-->
+                    <div class="userinfo cf">
+                        <div class="head-box">
+                            <img width="40" src="http://assets.jikexueyuan.com/user/avtar/default.gif" class="diaLoginBtn" jktag="0003|4|04100">
+                        </div>
+                        <div class="name-wrap">
+                            <div class="hello-word">
+                                <span class="word">Hi! 你好
+                <p class="sentence">欢迎来到极客学院</p>
+            
+            </span></div>
+                            <div class="operate cf">
+                                <a href="http://passport.jikexueyuan.com/sso/login" class="login-btn" jktag="0003|4|04101">登录</a>
+                                <a href="http://passport.jikexueyuan.com/sso/reg_phone" class="register-btn" jktag="0003|4|04102">注册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--userinfo end-->
+                    <!--recommend-->
+                    <div class="recommend">
+                        <ul class="start-list cf" node-type="recommend-start-list" style="display: block;">
+                            <li node-type="recommend-move-event">
+                                <span class="question icon"></span>
+                                <span class="title">问答</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li node-type="recommend-move-event">
+                                <span class="wiki icon"></span>
+                                <span class="title">wiki</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li node-type="recommend-move-event">
+                                <span class="lession icon"></span>
+                                <span class="title">课程</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li node-type="recommend-move-event">
+                                <span class="group icon"></span>
+                                <span class="title">社群</span>
+                                <span class="angle-bottom"></span>
+                            </li>
+                            <li>
+                                <a href="http://download.jikexueyuan.com/" jktag="0003|5|05104">
+                                    <span class="download icon"></span>
+                                    <span class="title">下载</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.jikexueyuan.com/path/" jktag="0003|5|05105">
+                                    <span class="known icon"></span>
+                                    <span class="title">知识</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://ke.jikexueyuan.com/zhiye/" jktag="0003|5|05106">
+                                    <span class="occupation icon"></span>
+                                    <span class="title">职业</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.jikexueyuan.com/vip/" jktag="0003|5|05107">
+                                    <span class="vip icon"></span>
+                                    <span class="title">VIP</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="move-list" node-type="recommend-move-list">
+                            <ul class="type-list cf" node-type="recommend-tab-list">
+                                <li class="question" node-type="recommend-tab-item">问答</li>
+                                <li class="wiki" node-type="recommend-tab-item">wiki</li>
+                                <li class="lession" node-type="recommend-tab-item">课程</li>
+                                <li class="group" node-type="recommend-tab-item">社群</li>
+                            </ul>
+                            <div class="content" node-type="recommend-content-box">
+                                <ul class="question tab-content" node-type="recommend-tab-content">
+                                    <li>
+                                        <a href="http://wenda.jikexueyuan.com/question/26076/" target="_blank" jktag="0003|5|05100|wdid:26076">
+                                            <img width="16" src="http://a1.jikexueyuan.com/home/201411/03/171a/54578ddd8e62a.png">
+                                            <span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://wenda.jikexueyuan.com/question/27538/" target="_blank" jktag="0003|5|05100|wdid:27538">
+                                            <img width="16" src="http://a1.jikexueyuan.com/home/201502/26/c2a9/54eeb7cba8791.png">
+                                            <span class="title">Bootstrap 最新版 V4 中文文档</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://wenda.jikexueyuan.com/question/28716/" target="_blank">
+                                            <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/devbase.png" jktag="0003|5|05100|wdid:28716">
+                                            <span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://wenda.jikexueyuan.com/question/10726/" target="_blank" jktag="0003|5|05100|wdid:10726">
+                                            <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/games.png">
+                                            <span class="title">build_native.py时报错</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://wenda.jikexueyuan.com/question/372/" target="_blank" jktag="0003|5|05100|wdid:372">
+                                            <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/mobile.png">
+                                            <span class="title">超级菜鸟想成为怎么成长？</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div id="recommendWiki">
+                                    <ul class="wiki cf tab-content" node-type="recommend-tab-content">
+                                        <li>
+                                            <a href="http://wiki.jikexueyuan.com/project/linux-in-eye-of-java/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:739">
+                                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/bc4abefb892d449d992bb76eaef70ba2.jpg" class="picture">
+                                                <p class="title">Java 程序员眼中的 Linux</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://wiki.jikexueyuan.com/project/django-set-up-blog/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:175">
+                                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/6cf980d73a694bbfad9e0bced1a9d045.jpg" class="picture">
+                                                <p class="title">Django 搭建博客</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://wiki.jikexueyuan.com/project/lua/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:159">
+                                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/82d392493bba44c4ab1199f03d2e23df.jpg" class="picture">
+                                                <p class="title">Lua 教程</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="recommendLession">
+                                    <ul class="lession cf tab-content" node-type="recommend-tab-content">
+                                        <li>
+                                            <a href="http://www.jikexueyuan.com/path/html5/" target="_blank" jktag="0003|5|05102|cslug:html5">
+                                                <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" class="picture">
+                                                <p class="title">HTML5开发</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.jikexueyuan.com/path/android/" target="_blank" jktag="0003|5|05102|cslug:android">
+                                                <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" class="picture">
+                                                <p class="title">Android</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.jikexueyuan.com/path/java/" target="_blank" jktag="0003|5|05102|cslug:java">
+                                                <img src="http://wirrorcdn.jikexueyuan.com/picture/Java.png" class="picture">
+                                                <p class="title">Java语言</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.jikexueyuan.com/path/javaweb/" target="_blank" jktag="0003|5|05102|cslug:javaweb">
+                                                <img src="http://a1.jikexueyuan.com/home/201503/13/7361/55028a07c02d1.jpg" class="picture">
+                                                <p class="title">JavaWeb</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="recommendGroup">
+                                    <ul class="group tab-content" node-type="recommend-tab-content">
+                                        <li class="cf">
+                                            <img src="http://qun.jikexueyuan.com/File/c58bb41944592a9e1bf334472e5c078d.png" alt="" class="picture">
+                                            <div class="info">
+                                                <p class="title">Android工程师</p>
+                                                <p class="count">已有<span>1118</span>人加入</p>
+                                            </div>
+                                            <a href="http://qun.jikexueyuan.com/android" class="join" target="_blank" jktag="0003|5|05103">＋ 加入</a>
+                                        </li>
+                                        <li class="cf">
+                                            <img src="http://qun.jikexueyuan.com/File/b6b490c2efa84f1ea9ee435323118560.png" alt="" class="picture">
+                                            <div class="info">
+                                                <p class="title">Web大前端工程师</p>
+                                                <p class="count">已有<span>1430</span>人加入</p>
+                                            </div>
+                                            <a href="http://qun.jikexueyuan.com/web" class="join" target="_blank" jktag="0003|5|05103">＋ 加入</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--recommend end-->
+                </div>
+                <!--lesson-right end-->
+            </div>
+        </div>
+        <!--main end-->
+    </div>
+</body>
+
+</html>
